@@ -16,7 +16,7 @@
         </p>
         <div class="hero-actions">
             <a href="{{ url_for('register') }}" class="btn-primary">Create free account</a>
-            <a href="#" class="btn-primary">See how it works</a>
+            <a href="https://www.youtube.com/embed/_RZwGzElnIs" class="btn-primary" id="see-how-it-works" data-video-url="https://www.youtube.com/embed/_RZwGzElnIs">See how it works</a>
         </div>
     </div>
     <div class="hero-visual">
@@ -66,6 +66,15 @@
         </div>
     </div>
 </section>
+
+<div id="video-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="video-container">
+            <iframe id="modal-video" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
 
 <section class="features">
     <div class="features-inner">
